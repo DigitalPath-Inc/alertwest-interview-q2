@@ -1,0 +1,97 @@
+[
+  {
+    "id": "pattern_1_simple_active_pending",
+    "pattern": {
+      "status": ["ACTIVE", "PENDING"]
+    }
+  },
+  {
+    "id": "pattern_2_equals_ignore_case_status",
+    "pattern": {
+      "status": [
+        { "equals-ignore-case": "ACTIVE" },
+        { "equals-ignore-case": "PENDING" }
+      ]
+    }
+  },
+  {
+    "id": "pattern_3_prefix_id_asdf",
+    "pattern": {
+      "details": {
+        "id": [{ "prefix": "asdf" }]
+      }
+    }
+  },
+  {
+    "id": "pattern_4_wildcard_id_match",
+    "pattern": {
+      "details": {
+        "id": [{ "wildcard": "*_*" }]
+      }
+    }
+  },
+  {
+    "id": "pattern_5_severity_info_warn",
+    "pattern": {
+      "severity": ["INFO", "WARN"]
+    }
+  },
+  {
+    "id": "pattern_6_equals_ignore_case_severity",
+    "pattern": {
+      "severity": [
+        { "equals-ignore-case": "INFO" },
+        { "equals-ignore-case": "ERROR" }
+      ]
+    }
+  },
+  {
+    "id": "pattern_7_source_prefix",
+    "pattern": {
+      "source": [{ "prefix": "web" }]
+    }
+  },
+  {
+    "id": "pattern_8_nested_type_wildcard",
+    "pattern": {
+      "details": {
+        "type": [{ "wildcard": "*_*" }]
+      }
+    }
+  },
+  {
+    "id": "pattern_9_tags_array_simple",
+    "pattern": {
+      "tags": ["data", "user", "batch"]
+    }
+  },
+  {
+    "id": "pattern_10_complex_combined",
+    "pattern": {
+      "status": [
+        { "equals-ignore-case": "ACTIVE" },
+        "FAILED"
+      ],
+      "severity": ["INFO", "CRITICAL"],
+      "details": {
+        "id": [{ "prefix": "asdf" }, { "prefix": "pay" }]
+      }
+    }
+  },
+  {
+    "id": "pattern_11_wildcard_end_match",
+    "pattern": {
+      "details": {
+        "id": [{ "wildcard": "*end" }]
+      }
+    }
+  },
+  {
+    "id": "pattern_12_prefix_test",
+    "pattern": {
+      "details": {
+        "id": [{ "prefix": "prefix_test" }]
+      }
+    }
+  }
+]

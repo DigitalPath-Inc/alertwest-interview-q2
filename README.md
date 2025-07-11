@@ -14,7 +14,10 @@ Feel free to reach out if you have any questions or need clarification on any as
 
 You need to implement an event streaming system that allows for dynamic routing of events to subscribers. Patterns are expected to be represented using the [AWS Event Ruler syntax](https://github.com/aws/event-ruler), and events are expected to be arbitrary JSON.
 
-Your task is to implement, from scratch, a pattern matching algorithm, then to operationalize this pattern matching algorithm for use in a cloud environment. Provided in this repo is an example set of patterns (in `patterns_example.json`) and events (in `events_example.json`) with the total number of patterns matched, along with validation patterns (in `validation_patterns.json`) and events (in `validation_events.json`) for testing correctness.
+Your task is to implement, from scratch (e.g. no off-the-shelf libraries), a pattern matching algorithm, then to operationalize this pattern matching algorithm for use in a cloud environment. Provided in this repo is an example set of patterns (in `data/patterns_example.json`) and events (in `data/events_example.json`) with the matching results (in `data/matches_example.json`), along with validation patterns (in `data/validation_patterns.json`) and events (in `data/validation_events.json`) for testing correctness.
+
+> [!NOTE]
+> Make sure to read through the entire README before starting to work on the problem. In Part 1, you will only be implementing the pattern matching algorithm. In Part 2, you will be utilizing the pattern matching algorithm to implement a service that can be used in a cloud environment.
 
 ## General Requirements
 
@@ -137,6 +140,20 @@ Your solution will be evaluated on the following criteria:
 - Time to first match: Latency for matching a single event against all patterns, from the start of the test run.
 - Time to match all events: Throughput to match all events in the validation set.
 - Memory usage: Peak memory usage during processing, and memory usage characteristics while processing events.
+
+> [!NOTE]
+> You can evaluate speed and memory usage independently of each other, so that memory usage recording is not factored into the time metrics. You also do not need to factor in the time it takes to load the patterns and events from disk into memory.
+
+### Example
+
+In the `data` directory, there are example patterns and events, along with the expected matches. For reference, the fastest solution tested to this point has the following evaluation metrics on the example set:
+
+| Metric                   | Value |
+| ------------------------ | ----- |
+| Total matches            | 44    |
+| Time to first match      | 452µs |
+| Time to match all events | 514µs |
+| Peak memory usage        | 943KB |
 
 ### Deliverables
 
