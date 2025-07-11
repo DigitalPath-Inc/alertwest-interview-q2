@@ -1,0 +1,102 @@
+[
+  {
+    "status": "ACTIVE",
+    "severity": "INFO",
+    "source": "web-app",
+    "details": {
+      "id": "asdf1234",
+      "type": "data_update"
+    },
+    "tags": ["data", "processing", "audit"]
+  },
+  {
+    "status": "PENDING",
+    "severity": "WARN",
+    "source": "api-service",
+    "details": {
+      "id": "xyz9876",
+      "type": "user_action"
+    },
+    "tags": ["user", "action"]
+  },
+  {
+    "status": "ACTive",
+    "severity": "ERROR",
+    "source": "background-worker",
+    "details": {
+      "id": "asdf5678",
+      "type": "batch_process"
+    },
+    "tags": ["batch", "error"]
+  },
+  {
+    "status": "INACTIVE",
+    "severity": "DEBUG",
+    "source": "monitoring",
+    "details": {
+      "id": "prefix_test123",
+      "type": "health_check"
+    },
+    "tags": ["health", "monitoring"]
+  },
+  {
+    "status": "COMPLETED",
+    "severity": "info",
+    "source": "scheduler",
+    "details": {
+      "id": "wildcard_match_end",
+      "type": "scheduled_task"
+    },
+    "tags": ["schedule", "task"]
+  },
+  {
+    "status": "FAILED",
+    "severity": "CRITICAL",
+    "source": "payment-service",
+    "details": {
+      "id": "pay_12345",
+      "type": "payment_processing"
+    },
+    "tags": ["payment", "critical"]
+  },
+  {
+    "status": "pending",
+    "severity": "WARN",
+    "source": "notification-service",
+    "details": {
+      "id": "notif_abcd",
+      "type": "email_send"
+    },
+    "tags": ["notification", "email"]
+  },
+  {
+    "status": "RUNNING",
+    "severity": "INFO",
+    "source": "data-pipeline",
+    "details": {
+      "id": "pipeline_xyz789",
+      "type": "data_transformation"
+    },
+    "tags": ["pipeline", "data"]
+  },
+  {
+    "status": "TIMEOUT",
+    "severity": "ERROR",
+    "source": "external-api",
+    "details": {
+      "id": "ext_timeout_001",
+      "type": "api_call"
+    },
+    "tags": ["external", "timeout"]
+  },
+  {
+    "status": "SUCCESS",
+    "severity": "INFO",
+    "source": "auth-service",
+    "details": {
+      "id": "auth_success_999",
+      "type": "authentication"
+    },
+    "tags": ["auth", "success"]
+  }
+]
