@@ -5,8 +5,8 @@
 1. Hard fork this repository (git clone + new remote) to create your own private copy.
 2. Add the following users as collaborators to your private repository: @ehiggins0, @jlang-dp, and @chrisschreiber.
 3. Open a PR with a description of your approach in the `SOLUTION.md` file. This should be a high-level overview, not specific implementation details.
-   > [!IMPORTANT]
-   > This first PR becomes a discussion point for the second interview. Don't go beyond this point until you have a chance to discuss your approach with us.
+> [!IMPORTANT]
+> This first PR becomes a discussion point for the second interview. Don't go beyond this point until you have a chance to discuss your approach with us.
 4. Work through the tasks outlined below.
 5. Make frequent, small PRs as you complete portions of the work. Request review for each PR and we will provide feedback on your approach.
 6. Document your approach, any assumptions made, and your reasoning for design decisions in the `SOLUTION.md` file.
